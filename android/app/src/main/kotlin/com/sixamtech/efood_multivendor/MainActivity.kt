@@ -1,0 +1,6 @@
+package com.eatoly.eato_food
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
