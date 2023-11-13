@@ -49,7 +49,7 @@ class OrderController extends GetxController implements GetxService {
   bool _isLoading = false;
   bool _subscriveLoading = false;
   bool _showCancelled = false;
-  String _orderType = 'delivery' + ' wdelivery';
+  String _orderType = 'delivery' + 'wdelivery';
   List<TimeSlotModel>? _timeSlots;
   List<TimeSlotModel>? _allTimeSlots;
   List<int>? _slotIndexList;

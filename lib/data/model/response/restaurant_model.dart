@@ -50,6 +50,7 @@ class Restaurant {
   bool? freeDelivery;
   String? coverPhoto;
   bool? delivery;
+  //bool? wdelivery;
   bool? takeAway;
   bool? scheduleOrder;
   double? avgRating;
@@ -142,6 +143,7 @@ class Restaurant {
     freeDelivery = json['free_delivery'];
     coverPhoto = json['cover_photo'] ?? '';
     delivery = json['delivery'];
+    //wdelivery = json['wdelivery'];
     takeAway = json['take_away'];
     scheduleOrder = json['schedule_order'];
     avgRating = json['avg_rating']?.toDouble();
@@ -209,7 +211,7 @@ class Restaurant {
     data['free_delivery'] = freeDelivery;
     data['cover_photo'] = coverPhoto;
     data['delivery'] = delivery;
-
+    //data['wdelivery'] = wdelivery;
     data['take_away'] = takeAway;
     data['schedule_order'] = scheduleOrder;
     data['avg_rating'] = avgRating;

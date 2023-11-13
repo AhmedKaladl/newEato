@@ -112,24 +112,7 @@ class InfoView extends StatelessWidget {
 
           const SizedBox(height: Dimensions.paddingSizeSmall),
 
-          InkWell(
-            onTap: (){
-              if(isDesktop) {
-                String? hostname = html.window.location.hostname;
-                String protocol = html.window.location.protocol;
-                String shareUrl = '$protocol//$hostname${restController.filteringUrl(restaurant.slug ?? '')}';
 
-                Clipboard.setData(ClipboardData(text: shareUrl));
-                showCustomSnackBar('restaurant_url_copied'.tr, isError: false);
-              } else {
-                String shareUrl = '${AppConstants.webHostedUrl}${restController.filteringUrl(restaurant.slug ?? '')}';
-                Share.share(shareUrl);
-              }
-            },
-            child: Icon(
-              Icons.share, size: 20  - (scrollingRate * 4),
-            ),
-          ),
         ]),
         const SizedBox(width: Dimensions.paddingSizeLarge),
 
